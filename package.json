@@ -1,0 +1,76 @@
+{
+  "name": "react-value-adapter",
+  "version": "0.1.0",
+  "main": "build/react-value-adapter.js",
+  "description": "Map/adapt a component's value/onChange props using a Map or function",
+  "author": "Tyler Rick <tyler@tylerrick.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TylerRick/react-value-adapter"
+  },
+  "keywords": [
+    "react",
+    "react component",
+    "adapt",
+    "map",
+    "value",
+    "props",
+    "component",
+    "translate props",
+    "rename props",
+    "adapt props",
+    "adapt values",
+    "prop adapter",
+    "value adapter",
+    "map props",
+    "map values",
+    "prop mapper",
+    "value mapper"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "NODE_ENV=development yarn build",
+    "build-dev-useless": "webpack --mode development",
+    "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts src test && tsc",
+    "lint-fix": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts src test --fix",
+    "start": "webpack-dev-server --mode development --open",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "prop-types": "^15",
+    "react": "^16",
+    "react-dom": "^16"
+  },
+  "dependencies": {
+    "hey-listen": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.x",
+    "@material-ui/core": "^4.7.1",
+    "@neutrinojs/eslint": "^9.0.0-rc.5",
+    "@neutrinojs/jest": "^9.0.0-rc.5",
+    "@neutrinojs/library": "^9.0.0-rc.5",
+    "@neutrinojs/node": "^9.0.0-rc.5",
+    "@neutrinojs/react": "9.0.0-rc.5",
+    "@neutrinojs/react-components": "9.0.0-rc.5",
+    "@testing-library/react": "9.x",
+    "@types/jest": "24.x",
+    "@types/react": "16.x",
+    "@types/react-dom": "16.x",
+    "eslint": "6.x",
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "24.x",
+    "mui-tri-state-checkbox": "^0.1.1",
+    "neutrino": "^9.0.0-rc.5",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript.git#semver:^1.0.8",
+    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint.git#semver:^1.0.3",
+    "prop-types": "^15",
+    "react": "^16",
+    "react-dom": "16.x",
+    "typescript": "3.7.x",
+    "webpack": "4.x",
+    "webpack-cli": "3.x",
+    "webpack-dev-server": "3.x"
+  }
+}
